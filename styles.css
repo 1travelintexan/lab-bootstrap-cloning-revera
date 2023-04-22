@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .navbar {
   background-color: rgb(225, 224, 224);
   padding: 30px;
@@ -13,8 +14,12 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
 }
+
 .nav-link {
   color: gray;
+}
+a:active {
+  color: red;
 }
 main {
   display: flex;
@@ -39,10 +44,54 @@ main {
 .img-container {
   height: 100%;
   width: 100%;
-  position: relative;
+  background-image: url("./starter-code/img/slider-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: aliceblue;
+}
+.img-container h2,
+.img-container h6 {
+  width: 50%;
+}
+
+.slider-cards-container {
+  height: 100%;
+  width: 100vw;
+  position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
+.slider-1-cards {
+  background-color: rgb(253, 106, 106);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.slider-1-card {
+  width: 30%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.carousel-item {
+  width: 100vw;
+  height: 80vh;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -53,18 +102,15 @@ main {
   background-image: url("./starter-code/img/overlay.png");
 }
 .slider-1 {
-  height: 100%;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  width: 100%;
 }
 #previous-btn {
-  background-color: rgb(252, 9, 74);
+  background-color: rgb(253, 106, 106);
   height: 100px;
   width: 50px;
 }
 #next-btn {
-  background-color: rgb(252, 9, 74);
+  background-color: rgb(253, 106, 106);
   height: 100px;
   width: 50px;
 }
@@ -83,4 +129,26 @@ main {
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
+}
+
+.latest-projects-container {
+  width: 70%;
+  margin-top: 30px;
+}
+.latest-projects-container h6 {
+  color: gray;
+}
+.latest-projects-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.latest-projects-img-container article {
+  margin: 20px;
+  text-align: center;
+}
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
