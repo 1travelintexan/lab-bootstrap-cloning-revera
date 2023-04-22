@@ -1,0 +1,86 @@
+:root {
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  background-color: rgb(225, 224, 224);
+  padding: 30px;
+}
+.navbar-brand {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-link {
+  color: gray;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 200px;
+}
+.links-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(133, 132, 132, 0.577);
+  background-image: url("./starter-code/img/overlay.png");
+}
+.slider-1 {
+  height: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+#previous-btn {
+  background-color: rgb(252, 9, 74);
+  height: 100px;
+  width: 50px;
+}
+#next-btn {
+  background-color: rgb(252, 9, 74);
+  height: 100px;
+  width: 50px;
+}
+.carousel-control-prev {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.carousel-control-next {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
