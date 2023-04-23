@@ -1,9 +1,7 @@
-:root {
-}
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 article p {
   text-align: left;
@@ -166,13 +164,29 @@ main {
 }
 
 footer {
-  border-top: 10px solid rgb(255, 84, 84);
+  border-top: 5px solid rgb(255, 84, 84);
   height: 30vh;
   background-color: rgb(89, 88, 88);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+}
+.footer-container {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: white;
+}
+.footer-container article {
+  width: 20%;
+}
+.footer-line {
+  line-height: 0.2em;
+}
+.footer-line h5 {
+  margin-bottom: 20px;
 }
 #bottom-footer {
   color: azure;
@@ -187,4 +201,5 @@ footer {
   width: 70%;
   margin: 0;
   padding: 10px;
+  line-height: 0.3em;
 }
